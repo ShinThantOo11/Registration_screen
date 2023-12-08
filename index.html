@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Student</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .text-primary{
+      color: #0F8173 !important;
+    }
+    .btn-primary{
+      background-color: #0F8173 !important;
+    }
+    p{
+      font-size: 18px !important;
+    }
+    input:focus,select:focus,textarea:focus{
+      border-color: #0F8173 !important;
+      box-shadow: 1px 1px 7px #0F8173 !important;
+    }
+    section.main{
+      background-image: url('./sign\ up\ background.png');
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    article.title{
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    form{
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      background-color: #EFFFFC55;
+    }
+  </style>
+</head>
+<body>
+  
+  <section class="main min-vh-100">
+    <div class="container py-5">
+      <article class="title">
+        <h3 class="fw-bold text-primary">Sign Up</h3>
+        <p class="">Share you Knowledges in E-Learning Website</p>        
+        <h6 class="fw-bold text-primary">Please complete  your information.</h6>
+      </article>
+      <form action="" class="border rounded shadow">
+        <div class="mb-3">
+          <label for="full_name" class="form-label fw-bold">
+            Full Name<span class="text-danger"> *</span>
+          </label>
+          <input type="text" class="form-control" id="full_name" required placeholder="Enter your full name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label fw-bold">
+            Email <span class="text-danger"> *</span>
+          </label>
+          <input type="email" class="form-control" id="email" required placeholder="example@gmail.com" >
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label fw-bold">
+            Password<span class="text-danger"> *</span>
+          </label>
+          <input type="password" class="form-control" id="password" required placeholder="Create password" >
+          <span class="text-danger fw-bold" style="font-size: 16px;">※ Password must be at least 8 characters long, and contains at least one digit, one alphabet.</span>
+        </div>
+        <div class="mb-3">
+          <label for="confirm_password" class="form-label fw-bold">
+            Confirm Password<span class="text-danger"> *</span>
+          </label>
+          <input type="password" class="form-control" id="confirm_password" required placeholder="confirm your password">
+        </div>
+        <div class="mb-3">
+          <label for="ph_no" class="form-label fw-bold">
+            Phone Number<span class="text-danger"> *</span>
+          </label>
+          <input type="number" class="form-control" id="ph_no" required placeholder="example@gmail.com" >
+        </div>
+        <div class="mb-3">
+          <label for="ph_no" class="form-label fw-bold">
+            Education<span class="text-danger"> *</span>
+          </label>
+          <select name="" id=""class="form-select" aria-label="Default select example" required>
+            <option selected>Open this select menu</option>
+            <option value="">Option one</option>
+            <option value="">Option two</option>
+            <option value="">Option three</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="nrc" class="form-label fw-bold">
+            NRC<span class="text-danger"> *</span>
+          </label>
+          <input type="text" class="form-control" id="nrc" placeholder="NRC" required>
+        </div>
+        <div class="mb-3">
+          <label for="text_area" class="form-label fw-bold">
+            Describe about yourself<span class="text-danger"> *</span>
+          </label>
+          <textarea class="form-control" id="text_area" rows="3" placeholder="Describe about yourself . . . " required></textarea>
+          <span class="text-danger fw-bold" style="font-size: 16px;">※ Please write less than 2500 words</span>
+        </div>
+        <div class="mb-3">
+          <input type="checkbox" class="" required>
+          <span class="ms-2">I agree to <a href="" class="">Term & Condition</a></span>
+        </div>
+        <button class="btn btn-primary w-100">Sign Up</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
